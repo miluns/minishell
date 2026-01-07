@@ -33,11 +33,17 @@ The command lifecycle is abstracted into four distinct stages:
 
 ## Technical Highlights
 
-### Resource Management
-The project adheres to a strict memory lifecycle policy. Every allocation is tracked and cleared during the transition between the parsing and execution phases, ensuring zero leaks during long-running sessions.
+### Deterministic Resource Management
+The shell implements a rigorous memory lifecycle policy to ensure high-uptime stability. Rather than relying on sporadic cleanup, the architecture follows a contained allocation cycle:
+* **Cycle-Based Deallocation:** All data structures—lexical tokens, command tables, and expansion buffers—are strictly tracked and deallocated before the next prompt.
+* **Robust Error Handling:** Integrated cleanup routines ensure that memory integrity is maintained even during critical system call failures or syntax interruptions.
+* **Memory Efficiency:** Verified through rigorous profiling to guarantee a zero-leak execution path, regardless of command complexity.
 
-### Process Synchronization
-Utilizes granular `waitpid` monitoring and signal masking to prevent "zombie" processes and ensure accurate exit code reporting across complex pipelines.
+### Process & Signal Orchestration
+Advanced orchestration ensures seamless execution and synchronization across the process tree:
+* **Pipe & FD Hygiene:** Precise management of file descriptors prevents resource leaks and pipe-related hangs by ensuring atomic closure of unused ends across fork boundaries.
+* **Context-Aware Signals:** Implements dynamic signal masking to handle `SIGINT`, `SIGQUIT`, and `EOF` in accordance with POSIX interactive shell specifications.
+* **Status Propagation:** Employs granular `waitpid` monitoring to prevent zombie processes and ensure the accurate capture of exit codes within multi-stage pipelines.
 
 ---
 

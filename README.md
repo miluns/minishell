@@ -57,7 +57,7 @@ Advanced orchestration ensures seamless execution and synchronization across the
   
   To compile and run this program, you must have the 'readline' development headers installed.  
   Find your operating system below and run the command:  
-  **LINUX:**
+  **LINUX:**  
   Debian / Ubuntu / Linux Mint / Kali Linux
   ```bash
   sudo apt-get update && sudo apt-get install libreadline-dev
@@ -66,8 +66,10 @@ Advanced orchestration ensures seamless execution and synchronization across the
   ```bash
   sudo dnf install readline-devel
   ```
-  (Older versions: sudo yum install readline-devel)  
-  **macOS:**
+  (Older versions: sudo yum install readline-devel)
+
+  
+  **macOS:**  
   Using Homebrew:
   ```bash
   brew install readline

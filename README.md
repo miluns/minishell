@@ -35,7 +35,7 @@ The command lifecycle is abstracted into four distinct stages:
 
 ### Deterministic Resource Management
 The shell implements a rigorous memory lifecycle policy to ensure high-uptime stability. Rather than relying on sporadic cleanup, the architecture follows a contained allocation cycle:
-* **Cycle-Based Deallocation:** All data structures—lexical tokens, command tables, and expansion buffers—are strictly tracked and deallocated before the next prompt.
+* **Cycle-Based Deallocation:** All data structures—lexical tokens, command tables, and expansion buffers are strictly tracked and deallocated before the next prompt.
 * **Robust Error Handling:** Integrated cleanup routines ensure that memory integrity is maintained even during critical system call failures or syntax interruptions.
 * **Memory Efficiency:** Verified through rigorous profiling to guarantee a zero-leak execution path, regardless of command complexity.
 

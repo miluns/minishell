@@ -51,7 +51,7 @@ Advanced orchestration ensures seamless execution and synchronization across the
 
 ### Prerequisites
 * `cc` (gcc/clang) compiler
-* `GNU Readline` library
+* `GNU Readline` library  
   To compile and run this program, you must have the 'readline' development headers installed. Find your operating system below and run the command:
   #### LINUX
   Debian / Ubuntu / Linux Mint / Kali Linux

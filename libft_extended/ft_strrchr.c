@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+char	*ft_strrchr(const char *s, int c)
+{
+	char	*cur_char;
+	char	*last_occ;
+
+	cur_char = (char *)s;
+	last_occ = NULL;
+	while (*cur_char)
+	{
+		if (c % 256 == (unsigned char)*cur_char)
+			last_occ = cur_char;
+		cur_char++;
+	}
+	if (c == '\0')
+		return (cur_char);
+	return (last_occ);
+}

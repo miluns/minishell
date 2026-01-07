@@ -55,18 +55,18 @@ Advanced orchestration ensures seamless execution and synchronization across the
    *  To compile and run this program, you must have the 'readline' development
      headers installed. Find your operating system below and run the command:
    > #### LINUX  
-     * *Debian / Ubuntu / Linux Mint / Kali Linux*  
+     * **Debian / Ubuntu / Linux Mint / Kali Linux**  
      sudo apt-get update && sudo apt-get install libreadline-dev  
-     * *Fedora / RHEL / CentOS / AlmaLinux*  
+     * **Fedora / RHEL / CentOS / AlmaLinux**  
      sudo dnf install readline-devel  
      (Older versions: sudo yum install readline-devel)
    > #### macOS
    Using Homebrew
   brew install readline  
-     > NOTE for macOS: If the compiler cannot find the library after installation,
-     you may need to export these flags or add them to your compilation command:
-     LDFLAGS="-L$(brew --prefix readline)/lib"
-     CPPFLAGS="-I$(brew --prefix readline)/include"
+     > *NOTE for macOS: If the compiler cannot find the library after installation,
+     you may need to export these flags or add them to your compilation command:  
+     LDFLAGS="-L$(brew --prefix readline)/lib"  
+     CPPFLAGS="-I$(brew --prefix readline)/include"*
 
 * UNIX-based operating system (Linux/macOS)
 

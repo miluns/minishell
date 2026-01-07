@@ -51,6 +51,7 @@ Advanced orchestration ensures seamless execution and synchronization across the
 
 ### Prerequisites
 * `cc` (gcc/clang) compiler
+* UNIX-based operating system (Linux/macOS)
 * `GNU Readline` library  
   To compile and run this program, you must have the 'readline' development headers installed.  
   Find your operating system below and run the command:
@@ -76,8 +77,6 @@ Advanced orchestration ensures seamless execution and synchronization across the
     LDFLAGS="-L$(brew --prefix readline)/lib"
     CPPFLAGS="-I$(brew --prefix readline)/include"*
     ```
-* UNIX-based operating system (Linux/macOS)
-
 ### Build
 ```bash
 git clone [https://github.com/miluns/minishell.git](https://github.com/miluns/minishell.git)

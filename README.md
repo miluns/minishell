@@ -51,7 +51,7 @@ Advanced orchestration ensures seamless execution and synchronization across the
 
 ### Prerequisites
 * `cc` (gcc/clang) compiler
-* `GNU Readline` library
+* `GNU Readline` library  
 To compile and run this program, you must have the 'readline' development
 headers installed. Find your operating system below and run the command:
 #### LINUX
@@ -69,9 +69,9 @@ Using Homebrew:
 ```bash
 brew install readline
 ```
-> *NOTE for macOS:
+*NOTE for macOS:
 If the compiler cannot find the library after installation,
-you may need to export these flags or add them to your compilation command:
+you may need to export these flags or add them to your compilation command:*
 ```bash
 LDFLAGS="-L$(brew --prefix readline)/lib"
 CPPFLAGS="-I$(brew --prefix readline)/include"*

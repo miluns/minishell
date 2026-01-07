@@ -56,16 +56,22 @@ Advanced orchestration ensures seamless execution and synchronization across the
      headers installed. Find your operating system below and run the command:
    > #### LINUX  
      * **Debian / Ubuntu / Linux Mint / Kali Linux**
+ 
+  
   ```bash  
      sudo apt-get update && sudo apt-get install libreadline-dev
   ```  
      * **Fedora / RHEL / CentOS / AlmaLinux**
+ 
+  
   ```bash  
      sudo dnf install readline-devel
   ``` 
      (Older versions: sudo yum install readline-devel)
    > #### macOS
-   Using Homebrew
+   Using Homebrew:
+
+  
   ```bash
   brew install readline
   ```

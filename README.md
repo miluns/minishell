@@ -54,7 +54,7 @@ Advanced orchestration ensures seamless execution and synchronization across the
 * `cc` (gcc/clang) compiler
 * `GNU Readline` library
   > To compile and run this program, you must have the 'readline' development headers installed.  
-  Find your operating system below and run the command:
+  Find your operating system below and run the command.
 
 
 

@@ -56,9 +56,7 @@ Advanced orchestration ensures seamless execution and synchronization across the
   > To compile and run this program, you must have the 'readline' development headers installed.
 
   
-  ##### Find your operating system below and run the command:
-
-  
+  #### Find your operating system below and run the command:
   **LINUX:**  
   Debian / Ubuntu / Linux Mint / Kali Linux
   ```bash

@@ -46,7 +46,7 @@ Advanced orchestration ensures seamless execution and synchronization across the
 
 ---
 
-## Installation & Usage
+## Installation
 
 ### Prerequisites
 * UNIX-based operating system (Linux/macOS)
@@ -80,8 +80,14 @@ Advanced orchestration ensures seamless execution and synchronization across the
     LDFLAGS="-L$(brew --prefix readline)/lib"
     CPPFLAGS="-I$(brew --prefix readline)/include"*
     ```
-### Build
+### Build and usage
 ```bash
-git clone [https://github.com/miluns/minishell.git](https://github.com/miluns/minishell.git)
+# Clone the repository
+git clone git@github.com:miluns/minishell.git
 cd minishell
+
+# Compile the program
 make
+
+# Run minishell
+./minishell

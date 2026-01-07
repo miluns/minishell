@@ -53,8 +53,9 @@ Advanced orchestration ensures seamless execution and synchronization across the
 * UNIX-based operating system (Linux/macOS)
 * `cc` (gcc/clang) compiler
 * `GNU Readline` library
-  > To compile and run this program, you must have the 'readline' development headers installed.  
-  Find your operating system below and run the command.
+  > To compile and run this program, you must have the 'readline' development headers installed.
+
+Find your operating system below and run the command.
 
 
 

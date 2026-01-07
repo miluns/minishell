@@ -61,12 +61,12 @@ Advanced orchestration ensures seamless execution and synchronization across the
      sudo dnf install readline-devel  
      (Older versions: sudo yum install readline-devel)
    > #### macOS
-   Using Homebrew
-  brew install readline  
-     * *NOTE for macOS: If the compiler cannot find the library after installation,
-       you may need to export these flags or add them to your compilation command:  
-       LDFLAGS="-L$(brew --prefix readline)/lib"
-       CPPFLAGS="-I$(brew --prefix readline)/include"*
+   Using Homebrew  
+  brew install readline
+        > *NOTE for macOS: If the compiler cannot find the library after installation,
+  you may need to export these flags or add them to your compilation command:
+  LDFLAGS="-L$(brew --prefix readline)/lib"
+  CPPFLAGS="-I$(brew --prefix readline)/include"*
 
 * UNIX-based operating system (Linux/macOS)
 

@@ -50,8 +50,8 @@ Advanced orchestration ensures seamless execution and synchronization across the
 ## Installation & Usage
 
 ### Prerequisites
-* `cc` (gcc/clang) compiler
 * UNIX-based operating system (Linux/macOS)
+* `cc` (gcc/clang) compiler
 * `GNU Readline` library
 
   

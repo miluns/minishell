@@ -65,7 +65,8 @@ Advanced orchestration ensures seamless execution and synchronization across the
   brew install readline
      * > *NOTE for macOS:
        If the compiler cannot find the library after installation,
-       you may need to export these flags or add them to your compilation command:  
+       you may need to export these flags or add them to your compilation command:
+       ```bash
        LDFLAGS="-L$(brew --prefix readline)/lib"  
        CPPFLAGS="-I$(brew --prefix readline)/include"*
 

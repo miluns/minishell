@@ -63,6 +63,7 @@ Advanced orchestration ensures seamless execution and synchronization across the
    > #### macOS
    Using Homebrew  
   brew install readline
+
      * > *NOTE for macOS:
        If the compiler cannot find the library after installation,
        you may need to export these flags or add them to your compilation command:

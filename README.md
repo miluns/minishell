@@ -1,6 +1,6 @@
 # minishell
 **minishell** is a minimalist system shell implementation designed to explore low-level process management, file descriptor manipulation, and lexical analysis. The project prioritizes structural stability, deterministic memory management, and behavioral parity with the **Bash shell**.  
-#### *Developed in collaboration with [thetopnone](https://github.com/thetopnone).*
+### *Developed in collaboration with [thetopnone](https://github.com/thetopnone).*
 ---
 
 ## Core Features
